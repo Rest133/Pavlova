@@ -9,6 +9,7 @@ html, body {
   height: 100%;
   background: #ffffff;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -16,14 +17,6 @@ html, body {
   width: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  @media (max-width: 1025px)  {
-    max-width:769px
-
-  }
-  @media (max-width: 768px) {
-    max-width: 380px;
-  }
-
 }
 
 .header {
@@ -31,13 +24,10 @@ html, body {
   width: 100%;
   margin: 0 auto;
   background: url("../../assets/img/1.header/header_bg.png") no-repeat center;
+  background-size: cover;
   overflow: hidden;
-  @media (max-width: 1025px) {
-    background-size: cover;
-
-  }
-
 }
+
 .content-header {
   max-width: 1340px;
   width: 100%;
@@ -50,55 +40,71 @@ html, body {
     padding: 0 10px;
 
   }
-  @media (max-width: 768px)  {
+  @media (max-width: 768px) {
     max-width: 380px;
     padding: 0 30px;
-
   }
 
 }
+
 .header-elements {
   display: flex;
-  width: 55%;
   justify-content: space-between;
   align-items: center;
-  min-width: 125px;
-  padding-left: 180px;
-  @media (max-width: 1125px) {
-    width: 65%;
-  }
+  max-width: 540px;
+  width: 40%;
+  min-width: 435px;
   @media (max-width: 1025px) {
-    width: 70%;
-
+    min-width: 350px;
   }
   @media (max-width: 768px) {
-    display: none;
-
-
+    min-width: unset;
+    flex-flow: column;
+    width: 100%;
   }
-
-
 }
+
+.header-elements_header {
+  @media (max-width: 768px) {
+    display: none;
+    margin-top: 20px;
+    align-self: center;
+    width: 100%;
+  }
+}
+
 .header-element {
   margin-right: 7px;
   cursor: pointer;
   transition: ease-in-out all 0.3s;
+  color: #ffffff;
+  text-decoration: none;
+
   &:hover {
     text-decoration: underline;
+  }
 
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 20px;
   }
 }
+
 .header-num {
   cursor: pointer;
   transition: ease-in-out all 0.3s;
+  color: #ffffff;
+  text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
-  @media (max-width: 1025px) {
-    margin-left: 30px;
 
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-top: 0;
   }
-
 }
 
 .header-menu {
@@ -112,88 +118,149 @@ html, body {
   @media (max-width: 1025px) {
     font-size: 14px;
     margin-top: 20px;
-
   }
   @media (max-width: 768px) {
     margin-top: 40px;
 
+    &.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      flex-flow: column;
+      margin-top: 0;
+      padding: 40px 30px 30px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      z-index: 30;
+      background: #a0817f;
 
+      .header-elements {
+        display: flex;
+      }
+
+      .header-right {
+        display: flex;
+      }
+    }
   }
-
-
 }
+
 .header-logo-wrapper {
   width: 153px;
   height: 55px;
-  margin-right: 7px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  @media (max-width: 768px) {
-    position: relative;
+  transition: 0.3s all ease-in-out;
+  margin-right: 50px;
 
-
+  &:hover {
+    opacity: 0.7;
   }
 
+  @media (max-width: 1025px) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 768px) {
+    position: relative;
+  }
 }
+
 .header-logo {
   width: 100%;
 }
+
 .header-right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left: auto;
+
   @media (max-width: 1025px) {
     flex-flow: column-reverse;
-    justify-content: center;
-
+    align-items: center;
   }
   @media (max-width: 768px) {
-    display: none;
-
-
+    flex-flow: column;
+    margin: 20px 0 0;
+    width: 100%;
   }
 }
+
+.header-right_header {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .header-menu-btn {
   margin-left: 25px;
   width: 181px;
   @media (max-width: 1025px) {
     margin-bottom: 15px;
-
+    margin-left: 0;
   }
-
+  @media (max-width: 768px) {
+    margin: 20px 0 0;
+  }
 }
+
 .burger-menu {
   display: none;
-  @media (max-width: 768px) {
-    display: flex;
-    height: 21px;
-    width: 29px;
-    flex-flow: column;
-    margin-left: auto;
 
+  width: 29px;
+  height: 3px;
+  background: #ffffff;
+  margin-left: auto;
+  position: relative;
+  transition: 0.3s all ease-in-out;
 
-
-  }
-
-}
-.menu-line {
-  @media (max-width: 768px) {
+  &::after, &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
     height: 3px;
     background: #ffffff;
-    width: 29px;
-    margin-top: 6px;
-    &:nth-child(1) {
-      margin-top: 0;
-    }
-
+    transition: 0.3s all ease-in-out;
   }
 
+  &::before {
+    top: -9px;
+    left: 0;
+  }
+
+  &::after {
+    bottom: -9px;
+    left: 0;
+  }
+
+  &.active {
+    background: transparent;
+    z-index: 50;
+    position: absolute;
+    top: 65px;
+    right: 30px;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
 }
+
 .header-bottom {
   margin: 167px 0 176px 50px;
+  z-index: 5;
   @media (max-width: 768px) {
-
     margin: 80px 0 300px;
     display: flex;
     flex-flow: column;
@@ -202,6 +269,7 @@ html, body {
 
   }
 }
+
 .header-title {
   color: #ffffff;
   font-weight: 700;
@@ -218,6 +286,7 @@ html, body {
   }
 
 }
+
 .header-text {
   font-size: 24px;
   color: #ffffff;
@@ -231,40 +300,36 @@ html, body {
 
   }
 }
+
 .header-btn {
   max-width: 230px;
   width: 100%;
   margin-top: 35px;
   @media (max-width: 768px) {
-
-    margin: 20px auto ;
-
+    margin: 20px auto;
   }
 }
+
 .header-img-wrapper {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   right: 5%;
-  width: 600px;
+  width: 816px;
 
 
-  @media (max-width: 1025px)  {
+  @media (max-width: 1025px) {
     right: -5%;
     bottom: -5px;
-    
+
   }
   @media (max-width: 768px) {
     left: -20%;
     right: unset;
     width: 400px;
-
-
   }
 }
+
 .header-img {
   width: 100%;
-  @media (max-width: 1025px) {
-
-  }
 }
 

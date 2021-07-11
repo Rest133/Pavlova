@@ -1,7 +1,18 @@
 .footer {
   background-color: #a0817f;
 }
+
 .footer-menu {
   margin-top: 0;
   padding: 23px 0;
+  @media (max-width: 1025px) {
+    margin-top: 0;
+  }
+  @media (max-width: 767px) {
+    margin-top: 0;
+    flex-flow: column;
+    .header-logo-wrapper{
+      margin: 0;
+    }
+  }
 }

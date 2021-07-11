@@ -25,7 +25,6 @@
   @media (max-width: 768px) {
     max-width: 380px;
     padding: 0 30px;
-
   }
 
 }
@@ -38,12 +37,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  padding-top: 100px;
   @media (max-width: 768px) {
     flex-flow: column;
-    margin-top: 70px;
-
-
+    padding-top: 70px;
   }
 
 }
@@ -52,10 +49,9 @@
   width: 521px;
   height: 301px;
   @media (max-width: 768px) {
-    width: 321px;
+    max-width: 320px;
+    width: 100%;
     height: unset;
-
-
   }
 
 }
@@ -88,12 +84,15 @@
 }
 
 .programs-table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25%, 310px));
+  grid-template-rows: repeat(2, minmax(50%, 310px));
   margin: 70px 0 100px 0;
   @media (max-width: 1025px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
     margin: 70px 50px 100px 50px;
   }
   @media (max-width: 768px) {
@@ -103,29 +102,32 @@
 }
 
 .programs-table__element {
-  width: 300px;
-  height: 300px;
-  padding: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+
+  @media (max-width: 1025px) {
+    width: 310px;
+    height: 310px;
+    padding: 30px;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     padding: 30px 0 0;
     height: 220px;
-
-
   }
 }
 
 .programs-table__element_1 {
   @media (max-width: 768px) {
     order: 2;
-
   }
 }
 
 .programs-table__element_2 {
   @media (max-width: 768px) {
     order: 1;
-
   }
 }
 
@@ -142,6 +144,10 @@
 }
 
 .programs-table__element_5 {
+  &::before {
+    transform: scale(-1, 1);
+  }
+
   @media (max-width: 768px) {
     order: 5;
   }
@@ -154,6 +160,10 @@
 }
 
 .programs-table__element_7 {
+  &::before {
+    transform: scale(-1, 1);
+  }
+
   @media (max-width: 768px) {
     order: 7;
   }
@@ -223,9 +233,7 @@
   @media (max-width: 768px) {
     padding-left: 24px;
     height: 321px;
-
   }
-
 }
 
 .programs-table__element_bg::before {
@@ -279,22 +287,22 @@
 
 .programs-table__element_bg-1 {
   background: url("../../assets/img/2.content/programs_anticovid.png") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .programs-table__element_bg-2 {
   background: url("../../assets/img/2.content/programs_antiage.png") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .programs-table__element_bg-3 {
   background: url("../../assets/img/2.content/programs_plus.png") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .programs-table__element_bg-4 {
   background: url("../../assets/img/2.content/programs_detox.png") no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .block-complex {
@@ -444,10 +452,40 @@
 .start-element {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 19%;
+  position: relative;
 
+  &::after {
+    position: absolute;
+    top: 20%;
+    right: -35%;
+    content: '';
+    background: url(../img/2.content/start_arrow.svg) center no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 24px;
+  }
+
+  &:last-of-type {
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 50px;
+    &::after {
+      top: 105%;
+      right: calc((100% - 13px) / 2);
+      transform: rotate(90deg);
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .start-element__img-wrapper {
@@ -467,6 +505,9 @@
   text-align: center;
   margin-top: 25px;
   line-height: normal;
+  @media (max-width: 768px) {
+    width: 220px;
+  }
 }
 
 .start-element__text_mb {
@@ -490,16 +531,12 @@
 .block-effectiveness {
   margin: 0 auto;
   background: url("../../assets/img/2.content/effectiveness_bg.png") no-repeat center;
-  max-width: 2000px;
   width: 100%;
 
-
   @media (max-width: 1025px) {
-    background-size: 350%;
-
+    background-size: cover;
   }
   @media (max-width: 768px) {
-    background-size: 1100%;
     display: flex;
     flex-flow: column;
     padding: 64px 0 30px 0;
@@ -630,10 +667,9 @@
   width: 374px;
   height: 484px;
   @media (max-width: 768px) {
-
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     height: unset;
-
   }
 }
 
@@ -759,10 +795,6 @@
 
 }
 
-.reviews-row__element-img {
-
-}
-
 .reviews-row__element-info {
   display: flex;
   align-items: center;
@@ -772,6 +804,10 @@
 .reviews-row__element-data {
   margin-left: 30px;
   width: 70%;
+  @media (max-width: 374px) {
+    margin-left: 10px;
+    width: 50%;
+  }
 }
 
 .reviews-row__element-surname, .reviews-row__element-name {
@@ -837,7 +873,6 @@
 
 .reviews-flamp__img {
   width: 100%;
-  opacity: 0.5;
 }
 
 .block-consultation {
@@ -934,11 +969,18 @@
   font-size: 14px;
   text-align: center;
   margin-top: 30px;
+
+  a {
+    color: #a0817f;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     font-size: 12px;
-
-
   }
 }
 

@@ -23,7 +23,7 @@
 <div class="wrapper">
     @@include('_header.html')
 
-    <div class="block-programs tl_block">
+    <div id="about" class="block-programs tl_block">
         <div class="content">
             <div class="programs-row">
                 <div class="programs-img-wrapper">
@@ -73,13 +73,11 @@
 
                 <div class="programs-table__element programs-table__element_bg  programs-table__element_bg-2 programs-table__element_4">
                     <p class="programs-table__element-title programs-table__element-title_bg">Anti AGE</p>
-                    <p class="programs-table__element-text-p programs-table__element-text-p_bg">Антивозрастная
-                        медицина</p>
+                    <p class="programs-table__element-text-p programs-table__element-text-p_bg">Антивозрастная медицина</p>
                 </div>
 
                 <div class="programs-table__element  programs-table__element_bg-r programs-table__element_bg-3 programs-table__element_5">
-                    <p class="programs-table__element-title programs-table__element-title_bg">Иммунитет
-                        PLUS</p>
+                    <p class="programs-table__element-title programs-table__element-title_bg">Иммунитет PLUS</p>
                 </div>
 
                 <div class="programs-table__element programs-table__element_6">
@@ -118,7 +116,7 @@
         </div>
     </div>
 
-    <div class="block-complex tl_block">
+    <div id="complex" class="block-complex tl_block">
         <div class="content">
             <h2 class="complex-title tl_title">Лечебные комплексы</h2>
             <div class="complexes-row">
@@ -243,8 +241,6 @@
                         на сайте</p>
                 </div>
 
-                <div class="start-arrow"></div>
-
                 <div class="start-element">
                     <div class="start-element__img-wrapper">
                         <img src="assets/img/2.content/start_med.png" alt="" class="start-element__img">
@@ -255,18 +251,12 @@
                     </p>
                 </div>
 
-                <div class="start-arrow"></div>
-
                 <div class="start-element">
                     <div class="start-element__img-wrapper">
                         <img src="assets/img/2.content/start_cup.png" alt="" class="start-element__img">
                     </div>
-                    <p class="start-element__text start-element__text_mb">Курс лечения и
-                        поддержки
-                    </p>
+                    <p class="start-element__text">Курс лечения и поддержки</p>
                 </div>
-
-                <div class="start-arrow"></div>
 
                 <div class="start-element">
                     <div class="start-element__img-wrapper">
@@ -276,7 +266,6 @@
                         консультация
                         специалиста</p>
                 </div>
-
             </div>
         </div>
     </div>
@@ -284,10 +273,7 @@
     <div class="block-effectiveness tl_block">
         <div class="content content_effectiveness">
             <div class="effectiveness-column">
-                <h2 class="effectiveness-column__title">Почему
-                    инфузионная
-                    терапия
-                    эффективна?
+                <h2 class="effectiveness-column__title">Почему инфузионная терапия эффективна?
                 </h2>
                 <div class="effectiveness-column__img-wrapper">
                     <img src="assets/img/2.content/effectiveness_img.png" alt="" class="effectiveness-column__img">
@@ -363,7 +349,7 @@
         </div>
     </div>
 
-    <div class="block-reviews tl_block">
+    <div id="reviews" class="block-reviews tl_block">
         <div class="content">
             <h2 class="review-title tl_title">Отзывы</h2>
             <div class="review-row">
@@ -519,19 +505,18 @@
         </div>
     </div>
 
-    <div class="block-consultation tl_block">
+    <div id="contacts" class="block-consultation tl_block">
         <div class="content">
             <form action="#" class="consultation-form">
                 <h2 class="consultation-form__title">Записаться на консультацию</h2>
                 <div class="consultation-form__row">
-                    <input type="number" name="number" class="consultation-form__input" placeholder="Ваш телефон">
+                    <input type="tel" name="number" class="consultation-form__input" placeholder="Ваш телефон">
                     <input type="text" name="name" class="consultation-form__input consultation-form__input_short"
                            placeholder="Ваше имя">
                     <button class="consultation-form__btn">Записаться</button>
                 </div>
                 <div class="consultation-form__info">Нажимая на кнопку, вы даёте согласие на обработку персональных
-                    данных
-                    и соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
+                    данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
             </form>
             <div class="consultation-info">
                 <div class="consultation-info__text">
@@ -550,5 +535,6 @@
 
     @@include('_footer.html')
 </div>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
