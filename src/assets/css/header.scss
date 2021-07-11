@@ -1,0 +1,270 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  @media (max-width: 1025px)  {
+    max-width:769px
+
+  }
+  @media (max-width: 768px) {
+    max-width: 380px;
+  }
+
+}
+
+.header {
+  max-width: 2000px;
+  width: 100%;
+  margin: 0 auto;
+  background: url("../../assets/img/1.header/header_bg.png") no-repeat center;
+  overflow: hidden;
+  @media (max-width: 1025px) {
+    background-size: cover;
+
+  }
+
+}
+.content-header {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  @media (max-width: 1025px) {
+    max-width: 769px;
+    padding: 0 10px;
+
+  }
+  @media (max-width: 768px)  {
+    max-width: 380px;
+    padding: 0 30px;
+
+  }
+
+}
+.header-elements {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 125px;
+  padding-left: 180px;
+  @media (max-width: 1125px) {
+    width: 65%;
+  }
+  @media (max-width: 1025px) {
+    width: 70%;
+
+  }
+  @media (max-width: 768px) {
+    display: none;
+
+
+  }
+
+
+}
+.header-element {
+  margin-right: 7px;
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+  &:hover {
+    text-decoration: underline;
+
+  }
+}
+.header-num {
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+  &:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 1025px) {
+    margin-left: 30px;
+
+  }
+
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 47px;
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  @media (max-width: 1025px) {
+    font-size: 14px;
+    margin-top: 20px;
+
+  }
+  @media (max-width: 768px) {
+    margin-top: 40px;
+
+
+  }
+
+
+}
+.header-logo-wrapper {
+  width: 153px;
+  height: 55px;
+  margin-right: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @media (max-width: 768px) {
+    position: relative;
+
+
+  }
+
+}
+.header-logo {
+  width: 100%;
+}
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media (max-width: 1025px) {
+    flex-flow: column-reverse;
+    justify-content: center;
+
+  }
+  @media (max-width: 768px) {
+    display: none;
+
+
+  }
+}
+.header-menu-btn {
+  margin-left: 25px;
+  width: 181px;
+  @media (max-width: 1025px) {
+    margin-bottom: 15px;
+
+  }
+
+}
+.burger-menu {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    height: 21px;
+    width: 29px;
+    flex-flow: column;
+    margin-left: auto;
+
+
+
+  }
+
+}
+.menu-line {
+  @media (max-width: 768px) {
+    height: 3px;
+    background: #ffffff;
+    width: 29px;
+    margin-top: 6px;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+  }
+
+}
+.header-bottom {
+  margin: 167px 0 176px 50px;
+  @media (max-width: 768px) {
+
+    margin: 80px 0 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+
+  }
+}
+.header-title {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 50px;
+  max-width: 400px;
+  width: 100%;
+  @media (max-width: 768px) {
+
+    font-size: 30px;
+    text-align: center;
+    line-height: normal;
+
+  }
+
+}
+.header-text {
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 23px;
+  max-width: 490px;
+  width: 100%;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 17px;
+
+  }
+}
+.header-btn {
+  max-width: 230px;
+  width: 100%;
+  margin-top: 35px;
+  @media (max-width: 768px) {
+
+    margin: 20px auto ;
+
+  }
+}
+.header-img-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 600px;
+
+
+  @media (max-width: 1025px)  {
+    right: -5%;
+    bottom: -5px;
+    
+  }
+  @media (max-width: 768px) {
+    left: -20%;
+    right: unset;
+    width: 400px;
+
+
+  }
+}
+.header-img {
+  width: 100%;
+  @media (max-width: 1025px) {
+
+  }
+}
+
