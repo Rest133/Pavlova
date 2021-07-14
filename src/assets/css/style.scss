@@ -29,6 +29,190 @@
 
 }
 
+.tl_button {
+  height: 46px;
+  border-radius: 22px;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  background: transparent;
+  transition: ease-in-out all 0.3s;
+  cursor: pointer;
+}
+
+.tl_button:hover {
+  background-color: #eddbd5;
+  border: 1px solid #eddbd5;
+}
+
+.tl_block {
+  max-width: 2000px;
+  width: 100%;
+}
+
+.tl_title {
+  font-size: 50px;
+  line-height: 48px;
+  font-weight: 600;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 35px;
+
+  }
+}
+
+.wrapper__popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.popup {
+  background: #ffffff;
+
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border: 20px solid #d7ad9d;
+  font-family: "Montserrat", sans-serif;
+  z-index: 100;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.popup__close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -50px;
+  left: 50%;
+  cursor: pointer;
+
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 10px;
+    transform: rotate(45deg);
+    background: #ffffff;
+    transition: 0.3s all ease-in-out;
+  }
+
+  &::after {
+    left: unset;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::before, &::after {
+      background: #a0817f;
+    }
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__title {
+  font-size: 36px;
+  font-weight: 600;
+
+}
+
+.form__subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  width: 70%;
+
+
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+
+
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #d7ad9d;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+
+  &.error {
+    border-color: #ea3525;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+  }
+
+}
+
+.form__label {
+  align-self: flex-start;
+  font-size: 18px;
+  margin-top: 15px;
+
+}
+
+.form__btn {
+  margin-top: 35px;
+  height: 50px;
+  border-radius: 22px;
+  border: 1px solid #000000;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  background: transparent;
+  transition: ease-in-out all 0.3s;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 1px;
+
+
+  &:hover {
+    background-color: #eddbd5;
+    border: 1px solid #eddbd5;
+  }
+
+
+}
+
+.form__politic {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
 .block-programs {
   background: #ffffff;
 }
@@ -910,10 +1094,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-
   }
-
-
 }
 
 .consultation-form__input {
@@ -922,13 +1103,16 @@
   border-bottom: 2px solid #d7ad9d;
   outline: none;
   width: 240px;
+
+  &.error {
+    border-bottom-color: #ea3525;
+  }
+
   @media (max-width: 1025px) {
     margin-top: 30px;
 
   }
-
 }
-
 
 .consultation-form__input_short {
   width: 240px;
@@ -951,17 +1135,19 @@
   cursor: pointer;
   transition: ease-in-out all 0.3s;
   margin-left: 45px;
-  @media (max-width: 1025px) {
-    margin: 30px 0 0;
 
+  &.error{
+    width: 200px;
   }
 
+  &:hover {
+    background-color: #eddbd5;
+    border: 1px solid #eddbd5;
+  }
 
-}
-
-.consultation-form__btn:hover {
-  background-color: #eddbd5;
-  border: 1px solid #eddbd5;
+  @media (max-width: 1025px) {
+    margin: 30px 0 0;
+  }
 }
 
 .consultation-form__info {
@@ -1122,37 +1308,4 @@
 //Special classes
 .dn {
   display: none;
-}
-
-.tl_button {
-  height: 46px;
-  border-radius: 22px;
-  border: 1px solid #ffffff;
-  font-size: 16px;
-  color: #ffffff;
-  background: transparent;
-  transition: ease-in-out all 0.3s;
-  cursor: pointer;
-}
-
-.tl_button:hover {
-  background-color: #eddbd5;
-  border: 1px solid #eddbd5;
-}
-
-.tl_block {
-  max-width: 2000px;
-  width: 100%;
-}
-
-.tl_title {
-  font-size: 50px;
-  line-height: 48px;
-  font-weight: 600;
-  text-align: center;
-  @media (max-width: 768px) {
-    font-size: 36px;
-    line-height: 35px;
-
-  }
 }

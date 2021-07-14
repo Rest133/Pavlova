@@ -12,8 +12,8 @@
 
     <link rel="stylesheet" href="assets/css/style.min.css">
 
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.svg" rel="icon" type="image/x-icon">
+    <link href="favicon.svg" rel="shortcut icon" type="image/x-icon">
 
 </head>
 <body>
@@ -70,7 +70,8 @@
 
                 <div class="programs-table__element programs-table__element_bg  programs-table__element_bg-2 programs-table__element_4">
                     <p class="programs-table__element-title programs-table__element-title_bg">Anti AGE</p>
-                    <p class="programs-table__element-text-p programs-table__element-text-p_bg">Антивозрастная медицина</p>
+                    <p class="programs-table__element-text-p programs-table__element-text-p_bg">Антивозрастная
+                        медицина</p>
                 </div>
 
                 <div class="programs-table__element  programs-table__element_bg-r programs-table__element_bg-3 programs-table__element_5">
@@ -317,7 +318,7 @@
                     <p class="creator-list__p">Окончила медицинскую академию с красным дипломом.</p>
                     <p class="creator-list__p">Врач сердечно-сосудистый хирург. врач хирург.</p>
                     <p class="creator-list__p">Врач ультразвуковой диагностики.</p>
-                    <p class="creator-list__p">Опыт работы более 1 оти лет.</p>
+                    <p class="creator-list__p">Опыт работы более 10 лет.</p>
                     <p class="creator-list__p">Врач превентивной и антивозрастной медицины (заместительная гормональная
                         терапия, лечение андрогинного дефицита, восстановление с помощью пептидов, занимаюсь
                         предгравидарной
@@ -504,13 +505,13 @@
 
     <div id="contacts" class="block-consultation tl_block">
         <div class="content">
-            <form action="#" class="consultation-form">
+            <form class="consultation-form" >
                 <h2 class="consultation-form__title">Записаться на консультацию</h2>
                 <div class="consultation-form__row">
-                    <input type="tel" name="number" class="consultation-form__input" placeholder="Ваш телефон">
-                    <input type="text" name="name" class="consultation-form__input consultation-form__input_short"
-                           placeholder="Ваше имя">
-                    <button class="consultation-form__btn">Записаться</button>
+                    <input type="text" name="phone" class="consultation-form__input" placeholder="Ваш телефон" required>
+                    <input type="text" name="username" class="consultation-form__input consultation-form__input_short"
+                           placeholder="Ваше имя" required>
+                    <button type="submit" class="consultation-form__btn">Записаться</button>
                 </div>
                 <div class="consultation-form__info">Нажимая на кнопку, вы даёте согласие на обработку персональных
                     данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
@@ -531,6 +532,27 @@
     </div>
 
     @@include('_footer.html')
+</div>
+<div class="wrapper__popup">
+    <div class="popup">
+        <div class="popup__close"></div>
+        <div class="form__wrapper">
+            <h2 class="form__title">Записаться</h2>
+            <p class="form__subtitle">Перезвоним после отправки и договоримся о времени приема.</p>
+            <form class="form" >
+                <label for="tel" class="form__label">Ваш телефон</label>
+                <input type="text" name="phone" id="tel" class="form__input" placeholder="Введите номер телефона" required>
+                <label for="name" class="form__label">Имя</label>
+                <input type="text" name="username" id="name" class="form__input" placeholder="Имя" required>
+                <button type="submit" class="form__btn">Отправить</button>
+            </form>
+            <p class="form__politic">
+                Нажимая кнопку отправить, я соглашаюсь с
+                <a href="#">политикой в отношении обработки персональных данных</a>
+            </p>
+        </div>
+
+    </div>
 </div>
 <script src="assets/js/script.js"></script>
 </body>
