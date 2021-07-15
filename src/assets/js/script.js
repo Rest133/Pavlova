@@ -18,6 +18,16 @@ function addBurgerMenuHandler() {
             document.body.style.overflow = ''
         }
     })
+
+    menu.querySelectorAll('.header-element').forEach(menuItem => {
+        menuItem.addEventListener('click', () => {
+            if (menu.classList.contains('active')){
+                burgerMenu.classList.remove('active')
+                menu.classList.remove('active')
+                document.body.style.overflow = ''
+            }
+        })
+    })
 }
 
 function popupHandler() {
@@ -31,7 +41,7 @@ function popupHandler() {
         document.body.style.overflow = ''
     })
 
-    formBtns.forEach(formBtn=>{
+    formBtns.forEach(formBtn => {
         formBtn.addEventListener("click", () => {
             popup.classList.add("active")
             document.body.style.overflow = 'hidden'
@@ -68,14 +78,14 @@ async function formSend(e, form) {
         })
         if (response.ok) {
             let btnText = form.querySelector('button').textContent
-            form.querySelector('button').textContent='Отправлено'
+            form.querySelector('button').textContent = 'Отправлено'
             setTimeout(function () {
                 form.reset()
-                form.querySelector('button').textContent=btnText
-            },1500)
+                form.querySelector('button').textContent = btnText
+            }, 1500)
         } else {
             form.querySelector('button').classList.add('error')
-            form.querySelector('button').textContent='Что-то пошло не так...'
+            form.querySelector('button').textContent = 'Что-то пошло не так...'
         }
     } else {
         console.log('error in form')

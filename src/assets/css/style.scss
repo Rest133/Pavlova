@@ -90,6 +90,12 @@
   z-index: 100;
   position: relative;
   transition: transform 0.5s;
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+  @media (max-width: 374px) {
+    transform: scale(0.8);
+  }
 }
 
 .popup__close {

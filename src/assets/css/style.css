@@ -474,6 +474,16 @@ html, body {
   position: relative;
   transition: transform 0.5s;
 }
+@media (max-width: 767px) {
+  .popup {
+    padding: 20px;
+  }
+}
+@media (max-width: 374px) {
+  .popup {
+    transform: scale(0.8);
+  }
+}
 
 .popup__close {
   position: absolute;
