@@ -1039,25 +1039,15 @@
 }
 
 .reviews-flamp__wrapper {
-  max-width: 1220px;
+  max-width: 1048px;
   width: 100%;
   margin: 40px auto 0;
+  padding: 0 10px;
+  background: #ffffff;
+
   @media (max-width: 768px) {
     margin-top: 20px;
-    background: #ffffff;
     position: relative;
-
-    &::after {
-      content: "FLAMP";
-      color: #000000;
-      font-size: 40px;
-      position: absolute;
-      bottom: calc((100% - 49px) / 2);
-      right: calc((100% - 144px) / 2)
-
-    }
-
-
   }
 }
 
@@ -1275,13 +1265,10 @@
     height: 20px;
     @media (max-width: 768px) {
       position: relative;
-
     }
-
   }
 
   @media (max-width: 768px) {
-
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -1293,21 +1280,16 @@
 .consultation-info__title {
   display: flex;
   justify-content: flex-start;
-  @media (max-width: 768px) {
-
-
-  }
-
 }
 
 .consultation-info__text {
   padding-right: 30px;
   @media (max-width: 768px) {
     padding-right: 0;
-
   }
 }
 
+@import "from-site";
 
 @import "footer";
 

@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     popupHandler()
 
     addFormsSendHandler()
+
+    addWidgetReviews()
 })
 
 function addBurgerMenuHandler() {
@@ -105,4 +107,23 @@ function formValidate(form) {
         }
     })
     return error
+}
+
+async function addWidgetReviews() {
+    let parseBlock = document.querySelector('.reviews-flamp__wrapper')
+
+    try {
+        const response = await fetch('reviewWidget.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        let text = await response.text()
+
+        parseBlock.insertAdjacentHTML('afterbegin', text)
+
+    } catch (e) {
+        console.error(e)
+    }
 }
