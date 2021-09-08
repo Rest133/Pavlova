@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     addFormsSendHandler()
 
     addWidgetReviews()
+
+    addSameHeight()
 })
 
 function addBurgerMenuHandler() {
@@ -23,7 +25,7 @@ function addBurgerMenuHandler() {
 
     menu.querySelectorAll('.header-element').forEach(menuItem => {
         menuItem.addEventListener('click', () => {
-            if (menu.classList.contains('active')){
+            if (menu.classList.contains('active')) {
                 burgerMenu.classList.remove('active')
                 menu.classList.remove('active')
                 document.body.style.overflow = ''
@@ -125,5 +127,22 @@ async function addWidgetReviews() {
 
     } catch (e) {
         console.error(e)
+    }
+}
+
+function addSameHeight() {
+    if (document.querySelector('.complexes-row') !== null) {
+        let allCards = document.querySelector('.complexes-row').querySelectorAll('.complex-element__text-part'),
+            maxHeight = 0
+
+        allCards.forEach(cardText => {
+            if (cardText.getBoundingClientRect().height > maxHeight) {
+                maxHeight = cardText.getBoundingClientRect().height
+            }
+        })
+
+        allCards.forEach(cardText => {
+            cardText.style.height = maxHeight + 'px'
+        })
     }
 }

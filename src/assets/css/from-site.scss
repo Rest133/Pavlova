@@ -10,16 +10,6 @@
   }
 }
 
-@-webkit-keyframes animation-slide-top {
-  0% {
-    top: 100%;
-    display: none
-  }
-  1% {
-    display: block
-  }
-}
-
 @keyframes animation-slide-top {
   0% {
     top: 100%;
@@ -27,17 +17,6 @@
   }
   1% {
     display: block
-  }
-}
-
-@-webkit-keyframes animation-fade-in {
-  0% {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
-  }
-  to {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
   }
 }
 
@@ -52,24 +31,6 @@
   }
 }
 
-@-webkit-keyframes shake-animation {
-  10%, 90% {
-    -webkit-transform: translate(-1px, 0);
-    transform: translate(-1px, 0)
-  }
-  20%, 80% {
-    -webkit-transform: translate(2px, 0);
-    transform: translate(2px, 0)
-  }
-  30%, 50%, 70% {
-    -webkit-transform: translate(-4px, 0);
-    transform: translate(-4px, 0)
-  }
-  40%, 60% {
-    -webkit-transform: translate(4px, 0);
-    transform: translate(4px, 0)
-  }
-}
 
 @keyframes shake-animation {
   10%, 90% {
@@ -2692,17 +2653,6 @@ p.t-rich-text__p + p.t-rich-text__p {
   background: #fff
 }
 
-@-webkit-keyframes loader-dots {
-  0%, 80%, to {
-    -webkit-transform: scale(0);
-    transform: scale(0)
-  }
-  40% {
-    -webkit-transform: scale(1);
-    transform: scale(1)
-  }
-}
-
 @keyframes loader-dots {
   0%, 80%, to {
     -webkit-transform: scale(0);
@@ -3125,7 +3075,7 @@ body.is-app-disabled .logo--f::before {
   fill: #1cbf60
 }
 
-@-webkit-keyframes 'nyGarland-animation--10' {
+@keyframes nyGarland-animation--10 {
   0%, 18.18181818% {
     fill: #ffbf00
   }
@@ -3146,28 +3096,7 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--10' {
-  0%, 18.18181818% {
-    fill: #ffbf00
-  }
-  20%, 38.18181818% {
-    fill: #ff8d29
-  }
-  40%, 58.18181818% {
-    fill: #99c21d
-  }
-  60%, 78.18181818% {
-    fill: #1cbf60
-  }
-  80%, 98.18181818% {
-    fill: #1cbf60
-  }
-  to {
-    fill: #ffbf00
-  }
-}
-
-@-webkit-keyframes 'nyGarland-animation--9' {
+@keyframes nyGarland-animation--9 {
   0%, 18.18181818% {
     fill: #2e6be6
   }
@@ -3188,28 +3117,8 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--9' {
-  0%, 18.18181818% {
-    fill: #2e6be6
-  }
-  20%, 38.18181818% {
-    fill: #ff4c5b
-  }
-  40%, 58.18181818% {
-    fill: #99c21d
-  }
-  60%, 78.18181818% {
-    fill: #1cbf60
-  }
-  80%, 98.18181818% {
-    fill: #1cbf60
-  }
-  to {
-    fill: #2e6be6
-  }
-}
 
-@-webkit-keyframes 'nyGarland-animation--8' {
+@keyframes nyGarland-animation--8 {
   0%, 18.18181818% {
     fill: #2e6be6
   }
@@ -3230,28 +3139,7 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--8' {
-  0%, 18.18181818% {
-    fill: #2e6be6
-  }
-  20%, 38.18181818% {
-    fill: #1cbf60
-  }
-  40%, 58.18181818% {
-    fill: #1cbf60
-  }
-  60%, 78.18181818% {
-    fill: #ff4c5b
-  }
-  80%, 98.18181818% {
-    fill: #ff4c5b
-  }
-  to {
-    fill: #2e6be6
-  }
-}
-
-@-webkit-keyframes 'nyGarland-animation--7' {
+@keyframes nyGarland-animation--7 {
   0%, 18.18181818% {
     fill: #ff4c5b
   }
@@ -3272,28 +3160,8 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--7' {
-  0%, 18.18181818% {
-    fill: #ff4c5b
-  }
-  20%, 38.18181818% {
-    fill: #ff8d29
-  }
-  40%, 58.18181818% {
-    fill: #ff4c5b
-  }
-  60%, 78.18181818% {
-    fill: #ff4c5b
-  }
-  80%, 98.18181818% {
-    fill: #2e6be6
-  }
-  to {
-    fill: #ff4c5b
-  }
-}
 
-@-webkit-keyframes 'nyGarland-animation--6' {
+@keyframes nyGarland-animation--6 {
   0%, 18.18181818% {
     fill: #1cbf60
   }
@@ -3314,28 +3182,8 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--6' {
-  0%, 18.18181818% {
-    fill: #1cbf60
-  }
-  20%, 38.18181818% {
-    fill: #2e6be6
-  }
-  40%, 58.18181818% {
-    fill: #ffbf00
-  }
-  60%, 78.18181818% {
-    fill: #1cbf60
-  }
-  80%, 98.18181818% {
-    fill: #2e6be6
-  }
-  to {
-    fill: #1cbf60
-  }
-}
 
-@-webkit-keyframes 'nyGarland-animation--5' {
+@keyframes nyGarland-animation--5 {
   0%, 18.18181818% {
     fill: #ff4c5b
   }
@@ -3356,28 +3204,7 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--5' {
-  0%, 18.18181818% {
-    fill: #ff4c5b
-  }
-  20%, 38.18181818% {
-    fill: #ff8d29
-  }
-  40%, 58.18181818% {
-    fill: #2e6be6
-  }
-  60%, 78.18181818% {
-    fill: #ff8d29
-  }
-  80%, 98.18181818% {
-    fill: #99c21d
-  }
-  to {
-    fill: #ff4c5b
-  }
-}
-
-@-webkit-keyframes 'nyGarland-animation--4' {
+@keyframes nyGarland-animation--4 {
   0%, 18.18181818% {
     fill: #ff8d29
   }
@@ -3398,28 +3225,8 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--4' {
-  0%, 18.18181818% {
-    fill: #ff8d29
-  }
-  20%, 38.18181818% {
-    fill: #ff4c5b
-  }
-  40%, 58.18181818% {
-    fill: #ff4c5b
-  }
-  60%, 78.18181818% {
-    fill: #99c21d
-  }
-  80%, 98.18181818% {
-    fill: #ffbf00
-  }
-  to {
-    fill: #ff8d29
-  }
-}
 
-@-webkit-keyframes 'nyGarland-animation--3' {
+@keyframes nyGarland-animation--3 {
   0%, 18.18181818% {
     fill: #99c21d
   }
@@ -3440,28 +3247,8 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--3' {
-  0%, 18.18181818% {
-    fill: #99c21d
-  }
-  20%, 38.18181818% {
-    fill: #1cbf60
-  }
-  40%, 58.18181818% {
-    fill: #2e6be6
-  }
-  60%, 78.18181818% {
-    fill: #99c21d
-  }
-  80%, 98.18181818% {
-    fill: #99c21d
-  }
-  to {
-    fill: #99c21d
-  }
-}
 
-@-webkit-keyframes 'nyGarland-animation--2' {
+@keyframes nyGarland-animation--2 {
   0%, 18.18181818% {
     fill: #1cbf60
   }
@@ -3482,28 +3269,9 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--2' {
-  0%, 18.18181818% {
-    fill: #1cbf60
-  }
-  20%, 38.18181818% {
-    fill: #ff4c5b
-  }
-  40%, 58.18181818% {
-    fill: #2e6be6
-  }
-  60%, 78.18181818% {
-    fill: #1cbf60
-  }
-  80%, 98.18181818% {
-    fill: #ffbf00
-  }
-  to {
-    fill: #1cbf60
-  }
-}
 
-@-webkit-keyframes 'nyGarland-animation--1' {
+
+@keyframes nyGarland-animation--1 {
   0%, 18.18181818% {
     fill: #1cbf60
   }
@@ -3524,49 +3292,6 @@ body.is-app-disabled .logo--f::before {
   }
 }
 
-@keyframes 'nyGarland-animation--1' {
-  0%, 18.18181818% {
-    fill: #1cbf60
-  }
-  20%, 38.18181818% {
-    fill: #ff8d29
-  }
-  40%, 58.18181818% {
-    fill: #1cbf60
-  }
-  60%, 78.18181818% {
-    fill: #2e6be6
-  }
-  80%, 98.18181818% {
-    fill: #ff8d29
-  }
-  to {
-    fill: #1cbf60
-  }
-}
-
-@-webkit-keyframes nySquare-faceChange {
-  0%, 23.58490566% {
-    left: 0;
-    top: -56px
-  }
-  25%, 48.58490566% {
-    left: 0;
-    top: 0
-  }
-  50%, 73.58490566% {
-    left: -56px;
-    top: 0
-  }
-  75%, 98.58490566% {
-    left: -56px;
-    top: -56px
-  }
-  to {
-    left: 0;
-    top: -56px
-  }
-}
 
 @keyframes nySquare-faceChange {
   0%, 23.58490566% {
@@ -3686,14 +3411,6 @@ body.is-app-disabled .logo--f::before {
   box-shadow: 2px 0 8px 0 #1059fa
 }
 
-@-webkit-keyframes loader-progress {
-  0% {
-    width: 0
-  }
-  to {
-    width: 95%
-  }
-}
 
 @keyframes loader-progress {
   0% {
@@ -14515,17 +14232,6 @@ body.is-browser-outdated .ugc-item__text-wrap {
   padding-bottom: 17px
 }
 
-@-webkit-keyframes animation-firework-hide {
-  80% {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
-  }
-  to {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    display: none
-  }
-}
 
 @keyframes animation-firework-hide {
   80% {
@@ -14539,14 +14245,6 @@ body.is-browser-outdated .ugc-item__text-wrap {
   }
 }
 
-@-webkit-keyframes animation-firework-bang--1 {
-  0% {
-    box-shadow: 0 0 0 #ff8d29, 0 0 0 #ff8d29, 0 0 0 #2e6be6, 0 0 0 #ff8d29, 0 0 0 #ffbf00, 0 0 0 #99c21d, 0 0 0 #1cbf60, 0 0 0 #ff4c5b, 0 0 0 #2e6be6, 0 0 0 #ff4c5b, 0 0 0 #ff8d29, 0 0 0 #ffbf00, 0 0 0 #2e6be6, 0 0 0 #ffbf00, 0 0 0 #99c21d, 0 0 0 #1cbf60, 0 0 0 #ffbf00, 0 0 0 #ff4c5b, 0 0 0 #2e6be6, 0 0 0 #99c21d, 0 0 0 #ff4c5b, 0 0 0 #2e6be6, 0 0 0 #2e6be6, 0 0 0 #ff4c5b, 0 0 0 #2e6be6, 0 0 0 #ff8d29, 0 0 0 #ffbf00, 0 0 0 #2e6be6, 0 0 0 #99c21d, 0 0 0 #ffbf00, 0 0 0 #99c21d, 0 0 0 #2e6be6, 0 0 0 #1cbf60, 0 0 0 #99c21d, 0 0 0 #99c21d, 0 0 0 #99c21d, 0 0 0 #ffbf00, 0 0 0 #99c21d, 0 0 0 #ff4c5b, 0 0 0 #1cbf60, 0 0 0 #1cbf60
-  }
-  to {
-    box-shadow: 468px 261px 0 4px #ff8d29, 498px -297px 0 2px #ff8d29, 395px 268px 0 4px #2e6be6, -258px -115px 0 4px #ff8d29, 284px 487px 0 2px #ffbf00, -152px 464px 0 5px #99c21d, -275px -380px 0 3px #1cbf60, -493px -294px 0 2px #ff4c5b, 308px 265px 0 4px #2e6be6, -266px 216px 0 4px #ff4c5b, -132px 145px 0 5px #ff8d29, 161px 74px 0 5px #ffbf00, -288px -371px 0 3px #2e6be6, 275px -246px 0 4px #ffbf00, -198px 159px 0 5px #99c21d, -147px 57px 0 5px #1cbf60, -87px 152px 0 5px #ffbf00, -163px 481px 0 5px #ff4c5b, -192px -374px 0 3px #2e6be6, -152px 9px 0 5px #99c21d, -389px -275px 0 4px #ff4c5b, -498px -115px 0 2px #2e6be6, 204px 148px 0 5px #2e6be6, 261px -444px 0 4px #ff4c5b, 205px 275px 0 4px #2e6be6, 147px -230px 0 5px #ff8d29, 26px 373px 0 3px #ffbf00, 369px -210px 0 3px #2e6be6, -246px -155px 0 5px #99c21d, -486px -147px 0 2px #ffbf00, -349px -275px 0 4px #99c21d, 274px -129px 0 4px #2e6be6, -41px 491px 0 2px #1cbf60, -488px -286px 0 2px #99c21d, 154px -163px 0 5px #99c21d, -377px -184px 0 3px #99c21d, 139px 481px 0 2px #ffbf00, -155px -341px 0 5px #99c21d, -150px 147px 0 5px #ff4c5b, 268px 347px 0 4px #1cbf60, -19px 164px 0 5px #1cbf60
-  }
-}
 
 @keyframes animation-firework-bang--1 {
   0% {
@@ -14557,14 +14255,6 @@ body.is-browser-outdated .ugc-item__text-wrap {
   }
 }
 
-@-webkit-keyframes animation-firework-bang--2 {
-  0% {
-    box-shadow: 0 0 0 #99c21d, 0 0 0 #ffbf00, 0 0 0 #1cbf60, 0 0 0 #ff8d29, 0 0 0 #ff4c5b, 0 0 0 #99c21d, 0 0 0 #1cbf60, 0 0 0 #ff4c5b, 0 0 0 #2e6be6, 0 0 0 #ff8d29, 0 0 0 #99c21d, 0 0 0 #99c21d, 0 0 0 #ff4c5b, 0 0 0 #ff4c5b, 0 0 0 #99c21d, 0 0 0 #2e6be6, 0 0 0 #ff4c5b, 0 0 0 #ff8d29, 0 0 0 #1cbf60, 0 0 0 #1cbf60, 0 0 0 #1cbf60, 0 0 0 #2e6be6, 0 0 0 #2e6be6, 0 0 0 #99c21d, 0 0 0 #ff4c5b, 0 0 0 #2e6be6, 0 0 0 #1cbf60, 0 0 0 #2e6be6, 0 0 0 #2e6be6, 0 0 0 #2e6be6, 0 0 0 #ffbf00, 0 0 0 #ff4c5b, 0 0 0 #ffbf00, 0 0 0 #ffbf00, 0 0 0 #ffbf00, 0 0 0 #1cbf60, 0 0 0 #ff8d29, 0 0 0 #1cbf60, 0 0 0 #2e6be6, 0 0 0 #ff4c5b, 0 0 0 #1cbf60
-  }
-  to {
-    box-shadow: 14px 484px 0 2px #99c21d, -382px -490px 0 3px #ffbf00, 160px 387px 0 3px #1cbf60, 267px -88px 0 4px #ff8d29, 164px 152px 0 5px #ff4c5b, -165px -225px 0 5px #99c21d, -66px 259px 0 4px #1cbf60, -492px 81px 0 2px #ff4c5b, -193px -277px 0 4px #2e6be6, 496px -358px 0 2px #ff8d29, 449px 155px 0 5px #99c21d, 145px 80px 0 5px #99c21d, -293px 490px 0 2px #ff4c5b, 272px -103px 0 4px #ff4c5b, -271px -381px 0 3px #99c21d, 372px -112px 0 3px #2e6be6, 4px 159px 0 5px #ff4c5b, 273px -38px 0 4px #ff8d29, -194px 157px 0 5px #1cbf60, 373px 158px 0 3px #1cbf60, -447px -370px 0 3px #1cbf60, 274px 384px 0 4px #2e6be6, -107px 271px 0 4px #2e6be6, 485px 269px 0 2px #99c21d, -400px 154px 0 5px #ff4c5b, -378px 127px 0 3px #2e6be6, -311px -265px 0 4px #1cbf60, 491px 423px 0 2px #2e6be6, 243px -485px 0 2px #2e6be6, 257px 234px 0 4px #2e6be6, 88px 274px 0 4px #ffbf00, -379px -273px 0 3px #ff4c5b, 293px 383px 0 3px #ffbf00, -501px -59px 0 2px #ffbf00, -39px 258px 0 4px #ffbf00, 260px -439px 0 4px #1cbf60, 18px 271px 0 4px #ff8d29, -384px -446px 0 3px #1cbf60, 446px 485px 0 2px #2e6be6, -160px 301px 0 5px #ff4c5b, -308px -163px 0 5px #1cbf60
-  }
-}
 
 @keyframes animation-firework-bang--2 {
   0% {
@@ -14575,14 +14265,6 @@ body.is-browser-outdated .ugc-item__text-wrap {
   }
 }
 
-@-webkit-keyframes animation-firework-bang--3 {
-  0% {
-    box-shadow: 0 0 0 #1cbf60, 0 0 0 #ff8d29, 0 0 0 #ff8d29, 0 0 0 #2e6be6, 0 0 0 #ff8d29, 0 0 0 #ff4c5b, 0 0 0 #ffbf00, 0 0 0 #ff4c5b, 0 0 0 #ff4c5b, 0 0 0 #99c21d, 0 0 0 #99c21d, 0 0 0 #99c21d, 0 0 0 #99c21d, 0 0 0 #1cbf60, 0 0 0 #ff8d29, 0 0 0 #2e6be6, 0 0 0 #ff4c5b, 0 0 0 #2e6be6, 0 0 0 #1cbf60, 0 0 0 #1cbf60, 0 0 0 #99c21d, 0 0 0 #ff8d29, 0 0 0 #ff4c5b, 0 0 0 #1cbf60, 0 0 0 #ff4c5b, 0 0 0 #ffbf00, 0 0 0 #ffbf00, 0 0 0 #ff8d29, 0 0 0 #ff4c5b, 0 0 0 #ff4c5b, 0 0 0 #ffbf00, 0 0 0 #2e6be6, 0 0 0 #99c21d, 0 0 0 #2e6be6, 0 0 0 #ff8d29, 0 0 0 #1cbf60, 0 0 0 #ff8d29, 0 0 0 #99c21d, 0 0 0 #ffbf00, 0 0 0 #2e6be6, 0 0 0 #ffbf00
-  }
-  to {
-    box-shadow: -241px -159px 0 5px #1cbf60, 378px 85px 0 3px #ff8d29, -250px -370px 0 3px #ff8d29, 485px -238px 0 2px #2e6be6, 493px 164px 0 5px #ff8d29, -258px 98px 0 4px #ff4c5b, -405px -146px 0 5px #ffbf00, -388px -94px 0 3px #ff4c5b, 217px -384px 0 3px #ff4c5b, 372px -189px 0 3px #99c21d, 331px 374px 0 3px #99c21d, 488px 255px 0 2px #99c21d, -169px -493px 0 2px #99c21d, -386px -215px 0 3px #1cbf60, -460px 369px 0 3px #ff8d29, -497px -324px 0 2px #2e6be6, -135px -382px 0 3px #ff4c5b, -266px 301px 0 4px #2e6be6, -298px 158px 0 5px #1cbf60, -500px 342px 0 2px #1cbf60, -209px -493px 0 2px #99c21d, -386px 346px 0 3px #ff8d29, -86px -263px 0 4px #ff4c5b, 376px 150px 0 3px #1cbf60, 294px 164px 0 5px #ff4c5b, 155px 112px 0 5px #ffbf00, -124px -147px 0 5px #ffbf00, -489px -73px 0 2px #ff8d29, 96px -492px 0 2px #ff4c5b, -495px 328px 0 2px #ff4c5b, -430px -159px 0 5px #ffbf00, -372px -15px 0 3px #2e6be6, -198px -490px 0 2px #99c21d, 493px 455px 0 2px #2e6be6, -138px 269px 0 4px #ff8d29, -272px 281px 0 4px #1cbf60, 272px 155px 0 5px #ff8d29, -147px -246px 0 5px #99c21d, -263px -486px 0 2px #ffbf00, -267px -274px 0 4px #2e6be6, 467px 377px 0 3px #ffbf00
-  }
-}
 
 @keyframes animation-firework-bang--3 {
   0% {
@@ -15125,17 +14807,6 @@ body.is-browser-outdated .footer-fixed__outdated {
   }
 }
 
-@-webkit-keyframes header-scrollDown-jump {
-  0% {
-    bottom: 32px
-  }
-  50% {
-    bottom: 30px
-  }
-  to {
-    bottom: 32px
-  }
-}
 
 @keyframes header-scrollDown-jump {
   0% {
@@ -16803,27 +16474,6 @@ body.is-browser-outdated .footer-fixed__outdated {
   }
 }
 
-@-webkit-keyframes show-message {
-  0% {
-    display: none
-  }
-  1% {
-    display: block;
-    margin-top: -56px
-  }
-  10%, 90% {
-    display: block;
-    margin-top: 0
-  }
-  99% {
-    display: block;
-    margin-top: -56px
-  }
-  to {
-    display: none;
-    margin-top: -56px
-  }
-}
 
 @keyframes show-message {
   0% {
@@ -17541,18 +17191,6 @@ body.is-browser-outdated .footer-fixed__outdated {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 40px
-}
-
-@-webkit-keyframes scroller-jump {
-  0% {
-    top: 0
-  }
-  50% {
-    top: -2px
-  }
-  to {
-    top: 0
-  }
 }
 
 @keyframes scroller-jump {

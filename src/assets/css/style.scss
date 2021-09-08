@@ -522,12 +522,12 @@
 }
 
 .complex-element__text-part {
+  display: flex;
+  flex-flow: column;
   background: #ffffff;
   padding: 40px 20px 30px 40px;
   @media (max-width: 768px) {
     padding: 35px 20px 30px 20px;
-
-
   }
 }
 
@@ -554,7 +554,7 @@
 
 .complex-element__cost {
   font-size: 24px;
-  margin-top: 10px;
+  margin: 10px 0 25px;
 }
 
 .complex-element__btn {
@@ -566,7 +566,7 @@
   border: 1px solid #a0817f;
   transition: ease-in-out all 0.3s;
   cursor: pointer;
-  margin-top: 25px;
+  margin-top: auto;
   background: transparent;
 }
 
@@ -579,7 +579,7 @@
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin-top: 65px;
   @media (max-width: 1025px) {
     justify-content: space-evenly;
@@ -596,6 +596,8 @@
 .complex-element {
   width: 30%;
   margin: 10px;
+  display: flex;
+  flex-flow: column;
   @media (max-width: 1025px) {
     width: 45%;
   }
@@ -608,7 +610,12 @@
 
 .complex-element__img-wrapper {
   max-width: 400px;
+  max-height: 232px;
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .complex-element__img {
@@ -620,8 +627,6 @@
   background: #ffffff;
   @media (max-width: 768px) {
     margin: 50px auto;
-
-
   }
 
 }
@@ -634,8 +639,6 @@
   @media (max-width: 768px) {
     margin-top: 50px;
     flex-flow: column;
-
-
   }
 }
 
@@ -1132,7 +1135,7 @@
   transition: ease-in-out all 0.3s;
   margin-left: 45px;
 
-  &.error{
+  &.error {
     width: 200px;
   }
 
