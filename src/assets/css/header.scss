@@ -14,15 +14,12 @@ html, body {
 }
 
 .wrapper {
-  max-width: 2000px;
   width: 100%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-
 }
 
 .header {
-  max-width: 2000px;
   width: 100%;
   margin: 0 auto;
   background: url("../../assets/img/1.header/header_bg.png") no-repeat center;
@@ -113,13 +110,13 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 47px;
+  margin: 47px 15px 0;
   font-size: 18px;
   color: #ffffff;
   position: relative;
   @media (max-width: 1025px) {
     font-size: 14px;
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
   @media (max-width: 768px) {
     margin-top: 40px;

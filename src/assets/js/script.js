@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     addFormsSendHandler()
 
-    addWidgetReviews()
-
     addSameHeight()
+
+    addPhoneMasks()
 })
 
 function addBurgerMenuHandler() {
@@ -58,7 +58,6 @@ function popupHandler() {
             document.body.style.overflow = 'hidden'
         })
     })
-
 }
 
 function addFormsSendHandler() {
@@ -111,25 +110,6 @@ function formValidate(form) {
     return error
 }
 
-async function addWidgetReviews() {
-    let parseBlock = document.querySelector('.reviews-flamp__wrapper')
-
-    try {
-        const response = await fetch('reviewWidget.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        let text = await response.text()
-
-        parseBlock.insertAdjacentHTML('afterbegin', text)
-
-    } catch (e) {
-        console.error(e)
-    }
-}
-
 function addSameHeight() {
     if (document.querySelector('.complexes-row') !== null) {
         let allCards = document.querySelector('.complexes-row').querySelectorAll('.complex-element__text-part'),
@@ -145,4 +125,14 @@ function addSameHeight() {
             cardText.style.height = maxHeight + 'px'
         })
     }
+}
+
+function addPhoneMasks() {
+    let inputPhones = document.querySelectorAll('input[type=tel]');
+    let maskOptions = {
+        mask: '+{7}(000)000-00-00'
+    };
+    inputPhones.forEach(inputPhone => {
+        let mask = IMask(inputPhone, maskOptions);
+    })
 }
