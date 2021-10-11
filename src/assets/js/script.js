@@ -8,7 +8,18 @@ document.addEventListener('DOMContentLoaded', function () {
     addSameHeight()
 
     addPhoneMasks()
+
+    openBenefitStructure()
 })
+function openBenefitStructure() {
+    let allElements = document.querySelectorAll('.benefit-structure__element')
+    allElements.forEach((currentElement)=>{
+        currentElement.querySelector(".benefit-structure__element-row").addEventListener("click", evt => {
+            currentElement.querySelector('.benefit-structure__img').classList.toggle("active")
+            currentElement.querySelector(".benefit-structure__text").classList.toggle("active")
+        })
+    })
+}
 
 function addBurgerMenuHandler() {
     let burgerMenu = document.querySelector('.burger-menu'),

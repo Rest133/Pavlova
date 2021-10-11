@@ -1655,7 +1655,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #eddbd5;
+    background-color: #d7ad9d;
     border: 1px solid #eddbd5;
   }
 }
@@ -1684,8 +1684,118 @@
 
 }
 
+
+.benefit-row {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+
+}
+.benefit-element {
+  width: 31%;
+  margin: 10px 5px;
+  background-color: #f7f0ed;
+  padding: 40px;
+
+}
+.benefit-element__title {
+  font-size: 30px;
+  line-height: 29px;
+  max-width: 200px;
+  width: 100%;
+
+}
+.benefit-element__text {
+  color: #a0817f;
+  font-size: 18px;
+  margin-top: 27px;
+
+}
+.benefit-info {
+  margin-top: 60px;
+
+}
+.benefit-info__title,.benefit-structure__title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+.benefit-info__text {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+
+}
+.benefit-structure {
+  margin: 60px 0 100px;
+  width: 100%;
+}
+.benefit-structure__column {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-flow: column;
+}
+.benefit-structure__element {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column;
+  background-color: #f5f5f5;
+  padding: 22px 18px 22px 35px;
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+}
+.benefit-structure__element-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+}
+.benefit-structure__element-title {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+.benefit-structure__text {
+  font-size: 18px;
+  width: 100%;
+  padding: 15px 60px 0 0 ;
+  margin-top: 20px;
+  border-top: 1px solid #ededed;
+  display: none;
+  p {
+    margin-top: 15px;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+  &.active {
+    display: unset;
+  }
+}
 .benefit-structure__img {
+  width: 27px;
+  height: 19px;
+  background-color: #d4d4d4;
   clip-path: polygon(50% 45%, 100% 0, 50% 68%, 0 0);
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+  &:hover {
+    background: #735d5f;
+  }
+  &.active {
+    transform: rotate(180deg);
+  }
+
+
+
+
 }
 
 //<!-- /Droppers --!>
