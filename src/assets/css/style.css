@@ -1506,8 +1506,8 @@ html, body {
 }
 @media (max-width: 768px) {
   .review-row {
-    margin-top: 30px;
-    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 20px;
   }
 }
 
@@ -1522,11 +1522,11 @@ html, body {
     width: 45%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .reviews-row__element {
     width: 100%;
     padding: 20px;
-    margin: 0 0 20px 0;
+    margin: 10px 0;
   }
 }
 
@@ -2300,6 +2300,90 @@ html, body {
   }
 }
 
+.slider {
+  display: none;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .slider {
+    display: flex;
+    margin-top: 30px;
+    min-width: 0;
+    flex-flow: column;
+  }
+  .slider .slick-arrow {
+    position: absolute;
+    top: calc((100% - 20px) / 2);
+    z-index: 10;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slick-arrow:after {
+    content: "";
+    background-color: #d4d4d4;
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(36% 0, 53% 0, 99% 50%, 57% 100%, 36% 100%, 83% 50%);
+  }
+  .slider .slick-prev {
+    left: calc((100% - 20px) / 2 - 148px);
+    transform: rotate(180deg);
+  }
+  .slider .slick-next {
+    right: calc((100% - 20px) / 2 - 148px);
+  }
+  .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .slider .slick-dots .slick-active button {
+    background: #ffffff;
+  }
+  .slider .slick-dots li {
+    list-style: none;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out all 0.3s;
+  }
+  .slider .slick-dots li button {
+    font-size: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #d4d4d4;
+  }
+}
+
+.slider__item {
+  margin: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .reviews-row__element_slick {
+    width: 280px;
+  }
+  .reviews-row__element_slick .reviews-row__element-data {
+    margin-left: 19px;
+  }
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
 .footer {
   background-color: #a0817f;
 }
@@ -2325,6 +2409,12 @@ html, body {
 
 .dn {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .no-mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

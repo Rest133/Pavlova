@@ -10,10 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
     addPhoneMasks()
 
     openBenefitStructure()
+
+    addSlider()
+
 })
+
 function openBenefitStructure() {
     let allElements = document.querySelectorAll('.benefit-structure__element')
-    allElements.forEach((currentElement)=>{
+    allElements.forEach((currentElement) => {
         currentElement.querySelector(".benefit-structure__element-row").addEventListener("click", evt => {
             currentElement.querySelector('.benefit-structure__img').classList.toggle("active")
             currentElement.querySelector(".benefit-structure__text").classList.toggle("active")
@@ -146,4 +150,19 @@ function addPhoneMasks() {
     inputPhones.forEach(inputPhone => {
         let mask = IMask(inputPhone, maskOptions);
     })
+}
+
+function addSlider() {
+    $(document).ready(function () {
+        $(".slider").slick({
+            dots: true,
+            slidesToShow:3,
+            variableWidth:true,
+            adaptiveHeight:true,
+            centerMode:true
+
+
+
+        });
+    });
 }
