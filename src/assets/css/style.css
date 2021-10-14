@@ -119,6 +119,7 @@ html, body {
   transition: ease-in-out all 0.3s;
   color: #ffffff;
   text-decoration: none;
+  white-space: nowrap;
 }
 .header-element:hover {
   text-decoration: underline;
