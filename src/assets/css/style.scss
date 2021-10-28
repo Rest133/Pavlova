@@ -655,6 +655,11 @@
 
   .complex-element__text-part {
     background: unset;
+    height: calc(100% - 372px);
+  }
+
+  .complex-element__text:last-of-type{
+    margin-bottom: 27px;
   }
 
   .complex-element__text {
@@ -673,9 +678,9 @@
   }
 
   .complex-element__btn {
-    margin-top: 27px;
-    max-width: unset;
-    width: 146px;
+    margin-top: auto;
+    max-width: 250px;
+    width: 100%;
   }
 }
 

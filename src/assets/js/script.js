@@ -127,17 +127,11 @@ function formValidate(form) {
 
 function addSameHeight() {
     if (document.querySelector('.complexes-row') !== null) {
-        let allCards = document.querySelector('.complexes-row').querySelectorAll('.complex-element__text-part'),
-            maxHeight = 0
+        let allCards = document.querySelectorAll('.complex-element__text-part')
 
-        allCards.forEach(cardText => {
-            if (cardText.getBoundingClientRect().height > maxHeight) {
-                maxHeight = cardText.getBoundingClientRect().height
-            }
-        })
-
-        allCards.forEach(cardText => {
-            cardText.style.height = maxHeight + 'px'
+        allCards.forEach(card=>{
+            let imgHeight = card.parentElement.querySelector('.complex-element__img-wrapper').getBoundingClientRect().height
+            card.style.height = `calc(100% - ${imgHeight}px)`
         })
     }
 }
@@ -160,9 +154,6 @@ function addSlider() {
             variableWidth:true,
             adaptiveHeight:true,
             centerMode:true
-
-
-
         });
     });
 }
